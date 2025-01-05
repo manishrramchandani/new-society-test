@@ -27,14 +27,80 @@
             border-radius: 5px;
             margin-top: 20px;
         }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-form {
+            display: grid;
+            gap: 10px;
+            max-width: 400px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #3498db;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to New Society</h1>
     <p>This is a test page for our new project.</p>
+    
     <section>
         <h2>About Us</h2>
         <p>We're building something amazing here.</p>
     </section>
+
+    <section>
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Innovation</h3>
+                <p>Cutting-edge solutions for modern challenges.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Community</h3>
+                <p>Building stronger connections together.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sustainability</h3>
+                <p>Creating a better future for all.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <textarea placeholder="Message"></textarea>
+            <button>Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+        <p>&copy; 2025 New Society. All rights reserved.</p>
+    </footer>
 </body>
 </html>
